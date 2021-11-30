@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = +prompt("Укажите возраст:", 18);
+        
+        // тернарный оператор (3)
+        // let access = (+age >=18) ? true:false;
+        // alert(access)
+
+
+
+        //обычный if
+        // if(age >=18) access = true;
+        // else access = false;
+        // alert(access);
+
+        //множественный выбор с тернарным оператором
+        // let messege = (age <=14) ? "Вы - ребенок" : 
+        //               (age <=19) ? "Вы - подросток" : 
+        //               (age <=28) ? "Вы - юноша" : 
+        //               (age <=100) ? "Вы - взрослый" : 
+        //               "Вы - старожил!";
+        // alert(messege);
+
+
+
+        if (age <=14)
+        alert("Вы - ребенок")
+        else if (age <=19)
+        alert("Вы - подросток")
+        else if (age <=28)
+        alert("Вы - юноша")
+        else if (age <=100)
+        alert("Вы -  взрослый")
+        else
+        alert("Вы -  старожил")
+
+
+
+    </script>
+</body>
+</html>
