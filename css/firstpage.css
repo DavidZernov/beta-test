@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
  
 /*
-.main_wrap, .left_side, .first_name, .sale_pic, .second_name, .contacts, .inst,.telega,.viber, .right_side, .buy_button, .big_pic, .material-icons{
+.main_wrap, .center, .first_name, .sale_pic, .second_name, .contacts, .inst,.telega,.viber, .right_side, .buy_button, .big_pic, .material-icons{
 	border: 1px solid #3B3FFD;
 }
 */
@@ -24,10 +24,10 @@
 	text-shadow:0 0 10px silver;
 }
 	
-.left_side{
+.center{
 	padding: 100px 0px 100px 0px;
 	max-width: 600px;
-	text-align: center;	
+	text-align: center;
 }
 
 
@@ -104,6 +104,10 @@
 	position: relative;
 }
 
+
+						/*ширина viewport*/
+
+
 @media (max-width: 1920px){
 	.first_name{
 		font-family: 'Kaushan Script', cursive;
@@ -111,13 +115,13 @@
 		margin: 70px 0px 35px 0px;
 		font-size: calc(65px + (25 + 25 * 0.7) * ((100vw - 320px) / 1920));
 	}
-	.left_side{
+	.center{
 		max-width: 970px;
 	}
 }
 
 @media (max-width:992px){
-	.left_side{
+	.center{
 		max-width: 750px;
 	}
 }
@@ -132,17 +136,55 @@
 		text-shadow: 1px 1px black;
 		font-size: calc(22px + (15 + 15 * 0.7) * ((100vw - 320px) / 1920));
 	}
-	.left_side{
+	.center{
 		max-width: none;
 	}
 }
+						/*ширина viewport*/
 
 
+						/*высота viewport*/
 
 
+@media (max-height: 876px){
+	.center{
+		padding: 40px 0px 40px 0px;
+	}
+}
+@media (max-height: 760px){
+	.center{
+		padding: 15px 0px 15px 0px;
+	}
+	.contacts{
+		margin: 50px 0px 0px 0px;
+	}
+}
 
+@media (max-height: 680px){
+	.center{
+		padding: 0px 0px 10px 0px;
+	}
+	.contacts{
+		margin: 35px 0px 0px 0px;
+	}
+	.first_name{
+		margin: 50px 0px 35px 0px;
+	}
+}
 
+@media (max-height: 625px){
+	.center{
+		padding: 0px 0px 0px 0px;
+	}
+	.contacts{
+		margin: 35px 0px 0px 0px;
+	}
+	.first_name{
+		margin: 0px 0px 35px 0px;
+	}
+}
 
+						/*высота viewport*/
 
 
 

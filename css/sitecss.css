@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.hedder,.logo_wrap,.main1,.past,.photo1,.photo2,.photo3,.photo4,.name1, .name2, .name3, .name4,.tovar,.t1,.inst,.bottom,.price-button,.send-button,.mainlogo,.telega,.viber,.contacts_wrap{
+/*	border: 1px solid #0A00FF;*/
+}
+
+
+
+.body{
+	background:#C7BCB5 no-repeat  fixed;
+	background-size: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*	Заголовок*/
+.hedder{
+	display: flex;
+	justify-content: space-between;
+/*	position: relative;          */
+	
+/*	border: #F81115 solid 2px;*/
+	width: 100%;
+	max-height: 100px;
+/*	background:rgba(109,0,245,0.40);  #6D00F5 */
+/*	background-image: linear-gradient(45deg, #C4B5C7 0%, #B5BFC7 50%, #C4B5C7 100%);*/
+	background: 	#b2c0d6;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius:30px;
+	margin-bottom: 10px;
+}
+
+
+/*
+@media (max-width: 1920px){
+	.mainlogo{
+	
+	max-width: calc(80px + (32 + 32 * 0.7) * ((100vw - 320px) / 1920));
+}
+
+@media (max-width:992px){
+	.left_side{
+		max-width: 750px;
+	}
+}
+
+@media (max-width:767px){
+	.left_side{
+		max-width: none;
+	}
+}
+*/
+
+
+
+
+
+
+.logo_wrap{
+	display: flex;
+	max-width: 650px;
+	margin-left: 150px;
+	
+}
+
+.logo_wrap > .mainlogo{
+/*	margin: 5px;*/
+	max-width : 500px;
+
+	
+	
+}
+.contacts_wrap{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	max-width: 500px;
+	margin-right: 150px
+}
+
+
+.inst{
+	
+	margin: 0 20px;
+	max-height: 50px;
+}
+.telega{
+	
+	margin: 0 20px;
+	max-height: 50px;
+}
+.viber{
+	
+	margin: 0 20px;
+	max-height: 50px;
+}
+
+
+
+	
+.sale_text{
+/*	border: #F000FF solid 1px;*/
+	margin-top: 15px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Kaushan Script', cursive;
+	color:#FFFFFF;
+	background: rgba(248,48,51,0.70);
+	border-radius: 30px;
+	text-shadow: 2px 2px black;
+	
+}
+
+
+
+
+
+.section{												/* общий блок для картинок и значений  */
+	display: flex;
+	flex-direction: column;
+/*	justify-content: center;*/
+	align-items: center;
+	text-align: center;
+/*	border: solid #3AFF00 1px;*/
+	width: auto;
+	height: 900px;
+	padding: 20px 0px;
+}
+
+.limb1,.limb2{
+	display: flex;
+/*	border: solid  #FFD600 1px;*/
+	max-width: 1800px;
+	
+}
+
+
+
+
+
+.past{												/* соединение значения и картинки   */
+	display: inline-block;
+/*	border: red solid 1px;*/
+	margin: 20px 15px 30px ;
+	padding: 0 0 0 0;
+	
+}
+
+
+.photo1{
+	display:inline-block;
+	overflow: hidden;
+	max-width: 235px;
+	max-height: 313px;
+	
+}
+			.photo1 img{
+				border-radius: 15px;
+				cursor:zoom-in;
+				display: block;
+				transition:1s;
+/*				border: #59FF00 solid 5px;*/
+			}
+						.photo1 img:hover{
+							transform:scale(1.2);
+						}
+
+
+
+.photo2{
+	display:inline-block;
+	overflow: hidden;
+	max-width: 235px;
+	max-height: 313px;
+	
+}
+			.photo2 img{
+				border-radius: 15px;
+				cursor:zoom-in;
+				display: block;
+				transition:1s;
+			/*	border: #59FF00 solid 5px;*/
+			}
+						.photo2 img:hover{
+							transform:scale(1.2);
+						}
+
+
+.photo3{
+	display:inline-block;
+	overflow: hidden;
+	max-width: 235px;
+	max-height: 313px;
+	
+}
+			.photo3 img{
+				border-radius: 15px;
+				cursor:zoom-in;
+				display: block;
+				transition:1s;
+			/*	border: #59FF00 solid 5px;*/
+			}
+						.photo3 img:hover{
+							transform:scale(1.2);
+						}
+
+
+.photo4{
+	display:inline-block;
+	overflow: hidden;
+	max-width: 235px;
+	max-height: 313px;
+	
+}
+			.photo4 img{
+				border-radius: 15px;
+				cursor:zoom-in;
+				display: block;
+				transition:1s
+			/*	border: #59FF00 solid 5px;*/
+			}
+						.photo4 img:hover{
+							transform:scale(1.2);
+						}
+
+
+
+.st1, .st2, .st3, .st4{       					/* цена\стоимость*/
+/*
+	margin: 0px 10px;
+	padding: 0 auto;
+	border: #FFBE02 solid 5px;
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 1000;
+	font-size: 17px;
+*/
+}
+.name1, .name2, .name3, .name4{									/* Название носков*/
+	margin: 5px 10px 0px 10px;
+	padding: 0px 10px 10px 10px;
+/*	border: #06FBFF solid 1px;*/
+	background: none;
+	cursor: pointer;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 22px;
+	font-weight: 1000;
+	color:white ;
+/*	text-shadow: 2px 2px black, 4px 4px #06FBFF;*/	
+	text-shadow: 2px 2px black;
+/*	text-shadow: 3px 3px #6D00F5;*/
+	
+}
+.past a{
+	text-decoration: none;
+}
+
+.btn{
+/*	border: #06FBFF solid 5px;*/
+}
+
+/*
+.button{
+	background: #EF0003;
+}
+*/
+
+.tovar{
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Kaushan Script', cursive;
+	margin: 20px auto;
+/*	border: #E91619 solid 1px;*/
+	
+}
+
+.t1{
+/*	border: #AA1AD1 solid 1px;*/
+	color: black;
+	background: rgba(0,255,132,0.70);
+		
+}
+/*.inst{*/
+/*
+	color:#FF0105;
+	border: #7E970D solid 1px;
+	background:rgba(228,193,193,0.7);
+	
+}
+*/
+
+.bottom{
+	align-content: center;
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+.bottom strong{
+	font-size: 27px;
+}
+
+.price-button strong{
+	font-size: 23px;
+	text-shadow: 2px 2px black;
+}
+
+.price-button del{
+	font-size: 20px;
+	text-shadow: 1px 1px black;
+}
+
+
+/*кнопка*/
+
+
+/*кнопка*/
+
+.price-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 5px 35px;
+  margin: 0px 10px 5px 10px;
+  border-radius: 30px;
+  font-family: 'Kaushan Script', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(45deg, #2196F3 0%, #2EE59D 51%, #2196F3 100%);
+/*  background-image: #2196F3;#7B68EE*/
+/*	background-image: linear-gradient(to right, red 0%, orange 51%, red 100%);*/
+/*	background-image: linear-gradient(to right, red 0%, purple 51%, red 100%);*/
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+	border: rgba(255,255,255,0.40) solid 3px;
+}
+.price-button:hover {
+  background-position: right center;
+	border: rgba(255,255,255,0.80) solid 3px;
+}
+
+/*кнопка*/
+
+
+.send-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 400px;
+  margin: 10px 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #2EE59D 0%, #2196F3 50%, #2EE59D 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+  transition: .5s;
+	border: rgba(255,255,255,0.40) solid 3px;
+}
+.send-button:hover {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+	border: rgba(255,255,255,0.80) solid 3px;
+	
+}
+
+
+/*кнопка*/
+
+
+
+
+
+
+
+
+
+

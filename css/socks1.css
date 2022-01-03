@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body{
+/*	background: url( "../../backbig999.jpg") no-repeat  fixed;*/
+	background:#C7BCB5;
+	background-size: 100%;
+}
+.hedder{
+	position: relative;          
+	text-align: center;
+/*	border: #F81115 solid 2px;*/
+	width: 100%;
+	height: 190px;
+	background:rgba(153,112,251,0.30);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius:30px;
+	margin-bottom: 10px;
+}
+.sock{
+	position: absolute;
+	margin: 20px 0px 0px -45px;
+}
+.text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Kaushan Script', cursive;
+	font-size: 100px;
+	line-height: 1.1;
+	text-shadow: 3px 3px white;
+	padding: 10px 0px 0px 0px;
+}
+.text p{
+	font-size: 25px;
+	text-shadow: 1px 1px white;
+}
+.btn-back{
+/*	border: #0015FF solid 1px;*/
+}
+
+.main-block1{
+/*	border: #0005F5 solid 2px;*/
+	padding: 20px 0px;
+	margin: 0 auto;
+	width: auto;
+	text-align: center;
+	height: 650px;
+}	
+	.past1, .past2, .past3, .past4{
+		display: inline-block;
+/*		border: #ffffff solid 1px;*/
+		width: 450px;
+		float: left;
+		
+}
+
+	
+	
+
+		.past1{
+					width: 160px;
+}
+
+						.pic1{
+/*							border: #00879E solid 1px;*/
+							margin: 0px 0px 20px 30px;
+}
+
+						.pic2{
+/*							border: #00879E solid 1px;*/
+							margin: 70px 0px 70px 30px;
+}
+						.pic3{
+/*							border: #00879E solid 1px;*/
+							margin: 20px 0px 0px 30px;
+}
+
+						.small-pic{
+							border-radius: 10px;
+						}
+
+		.past2{
+					width: 600px;
+					padding: 0px 0px 0px 0px;
+					margin: 0px 20px 0px 50px;
+				
+}
+
+						.big-pic{
+							margin: 0 auto;
+							padding: 0px 0px 0px 0px;
+							border-radius: 25px;
+/*							border: #1308FF solid 1px;*/
+		}	
+						.big-pic1{
+							
+							border-radius: 25px;
+							
+		}	
+						
+
+						.price{
+/*							border: #880B03 solid 1px;*/
+							padding: 5px 0px 10px 0px;
+							
+		}
+
+
+.n-p{
+	background:#D9D2CD;
+	border-radius: 25px;
+}
+
+
+
+		.past3{
+					width: 400px;
+					
+					margin: 0px 0px 0px 30px;
+					font-family: 'Kaushan Script', cursive;
+}
+
+		.past3-color{
+			background:#D9D2CD;
+			border-radius: 25px;
+	
+}
+						.name-socks{
+/*							border: #880B03 solid 1px;*/
+							padding: 10px 0px 10px 0px;
+							
+							
+							
+		}
+					
+						.consist{
+/*							border: #880B03 solid 1px;*/
+							padding: 20px 0px 5px 10px;
+							margin: 0px 0px 100px 0px;
+							text-align: left;
+							font-size:20px;
+							text-shadow: 1px 1px white;
+
+		}				
+						.description{
+/*							border: #880B03 solid 1px;*/
+							margin: 50px 0px;
+							padding: 5px 0px 5px 10px;
+							text-align: left;
+							font-size:20px;
+							text-shadow: 1px 1px white;
+}
+						.product{
+/*							border: #880B03 solid 1px;*/
+							margin: 110px 0px 25px 0px;
+							padding: 5px 0px 20px 10px;
+							text-align: left;
+							font-size: 20px;
+							text-shadow: 1px 1px white;
+		}
+
+						
+						.button{
+/*							border: #880B03 solid 1px;*/
+							margin: 10px 0px;
+							padding: 10px 0px;
+							text-shadow: 1px 1px white;
+							
+		}
+						
+		.past4{
+					height:650px;
+					float: left;
+}
+
+			
+						.image img{
+							border-radius: 25px;
+							margin: 0px 0px 0px 120px;
+							border: #169FA2 solid 1px;
+							
+		}
+
+
+
+.name1, .name2, .name3, .name4{									/* Название носков*/
+	margin: 5px 10px 0px 10px;
+	padding: 0px 30px 5px 30px;
+/*	border: #06FBFF solid 1px;*/
+	background: none;
+	cursor: pointer;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 30px;
+	font-weight: 1000;
+	color:white ;
+/*	text-shadow: 2px 2px black, 4px 4px #06FBFF;*/	
+	text-shadow: 2px 2px black;
+/*	text-shadow: 3px 3px #6D00F5;*/
+	
+}
+
+.price{
+/*	background-image: linear-gradient(to right, #2EE59D 0%, #7B68EE 51%, #2EE59D 100%);*/
+/*	border-radius: 30px;*/
+	font-family: 'Kaushan Script', cursive;
+	color: black;
+}
+
+
+.price strong{
+	font-size: 30px;
+	text-shadow: 2px 2px black;
+	color:white;
+}
+.price del{
+	font-size: 20px;
+	text-shadow: 1px 1px black;
+	color:white;
+}
+
+
+
+.buy-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 800;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+
+	
+}
+.buy-button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+/*кнопка
+
+
+
+/*кнопка*/
+
+
+/*кнопка*/
+
+/*
+.price-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 105px;
+  margin: 0px 10px 5px 10px;
+  border-radius: 30px;
+  font-family: 'Kaushan Script', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #2EE59D 0%, #7B68EE 51%, #2EE59D 100%);
+*/
+/*	background-image: linear-gradient(to right, red 0%, orange 51%, red 100%);*/
+/*	background-image: linear-gradient(to right, red 0%, purple 51%, red 100%);*/
+/*
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+*/
+/*
+}
+.price-button:hover {
+  background-position: right center;
+}
+*/
+
+/*кнопка*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
