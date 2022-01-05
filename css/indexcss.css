@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+ 
+/*
+.main_wrap, .center, .first_name, .sale_pic, .second_name, .contacts, .inst,.telega,.viber, .right_side, .buy_button, .big_pic, .material-icons{
+	border: 1px solid #3B3FFD;
+}
+*/
+
+
+.main_wrap{
+	display: flex;
+	max-width: 100%;
+	justify-content: center;
+}
+
+.first_name > .material-icons{
+	font-size: calc(120px + 40 * (100vw / 1920));
+	top:15px;
+	padding-left:10px;
+	color: rgba(255,255,255,1);
+	position: relative;
+	text-shadow:0 0 10px silver;
+}
+	
+.center{
+	padding: 100px 0px 100px 0px;
+	max-width: 600px;
+	text-align: center;
+}
+
+
+.first_name{
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	line-height: 1;
+	margin: 70px 0px 35px 0px;
+	text-shadow:0 0 10px silver;
+	color: white;
+	
+}
+
+.second_name{
+	color:white;
+	font-family: 'Kaushan Script', cursive;
+	margin: 0px 0px 50px 0px;
+	text-shadow: 1px 1px black;
+	font-size: calc(15px + 15 * (100vw / 1920));
+}
+
+
+.contacts{
+	margin: 75px 0px 0px 0px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.inst,.telega,.viber{
+	margin: 0 20px;
+	max-width: 50px;
+}
+
+.right_side{
+	float: right;
+	margin: 150px 50px 50px 0px;
+	height: 100%;
+}
+
+.big_pic{
+	max-width: 90%;
+}
+
+.buy_button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 100px;
+  margin: 15px 15px;
+  border-radius: 30px;
+  background:rgba(192,192,192,0.2);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+  transition: .4s;
+  text-align: center;
+  border: rgba(255,255,255,0.35) solid 3px;
+}
+
+
+.buy_button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+}
+.buy_button > .material-icons{
+	top:5px;
+	position: relative;
+}
+
+
+						/*ширина viewport*/
+
+
+@media (max-width: 1920px){
+	.first_name{
+		font-family: 'Kaushan Script', cursive;
+		line-height: 1;
+		margin: 70px 0px 35px 0px;
+		font-size: calc(65px + (25 + 25 * 0.7) * ((100vw - 320px) / 1920));
+	}
+	.center{
+		max-width: 970px;
+	}
+}
+
+@media (max-width:992px){
+	.center{
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 767px){
+	.buy_button{
+  		padding: 12px 55px;
+	}
+	.second_name{
+		font-family: 'Kaushan Script', cursive;
+		margin: 0px 0px 50px 0px;
+		text-shadow: 1px 1px black;
+		font-size: calc(22px + (15 + 15 * 0.7) * ((100vw - 320px) / 1920));
+	}
+	.center{
+		max-width: none;
+	}
+}
+						/*ширина viewport*/
+
+
+						/*высота viewport*/
+
+
+@media (max-height: 876px){
+	.center{
+		padding: 40px 0px 40px 0px;
+	}
+}
+@media (max-height: 760px){
+	.center{
+		padding: 15px 0px 15px 0px;
+	}
+	.contacts{
+		margin: 50px 0px 0px 0px;
+	}
+}
+
+@media (max-height: 680px){
+	.center{
+		padding: 0px 0px 10px 0px;
+	}
+	.contacts{
+		margin: 35px 0px 0px 0px;
+	}
+	.first_name{
+		margin: 50px 0px 35px 0px;
+	}
+}
+
+@media (max-height: 625px){
+	.center{
+		padding: 0px 0px 0px 0px;
+	}
+	.contacts{
+		margin: 35px 0px 0px 0px;
+	}
+	.first_name{
+		margin: 0px 0px 35px 0px;
+	}
+}
+
+						/*высота viewport*/
+
+
+
+
+
+
+
+
+
