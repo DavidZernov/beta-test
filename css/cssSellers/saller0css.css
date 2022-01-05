@@ -121,7 +121,6 @@
 	align-content: center;
 	max-height: 5000px;
 	max-width: 1300px;
-	border: 1px solid red;
 }
 .sallerName{
 	width: 100%;
@@ -311,7 +310,7 @@ a{
 }
 	.catName{
 	font-size: 22px;
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 30px;
 }
 	.sallerName{
@@ -364,7 +363,7 @@ a{
 }
 	.catName{
 	font-size: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 30px;
 }
 	.sallerName{
@@ -417,7 +416,7 @@ a{
 }
 	.catName{
 	font-size: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 30px;
 }
 	.sallerName{
@@ -469,7 +468,7 @@ a{
 }
 	.catName{
 	font-size: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 30px;
 }
 	.sallerName{
