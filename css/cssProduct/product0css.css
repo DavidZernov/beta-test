@@ -334,7 +334,7 @@ a{
 }
 
 .bottom-pic > div > a {
-/*	display: block;*/
+	display: block;
 }
 .bottom-pic > div > a > img {
 	width: 120px;
