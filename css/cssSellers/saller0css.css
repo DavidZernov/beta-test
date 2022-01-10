@@ -169,6 +169,7 @@
   text-shadow: none;
 }
 .product>img{
+	height: 210px;       
 	width: 150px;
 	margin-top: 10px;
 	border-radius: 10px;
