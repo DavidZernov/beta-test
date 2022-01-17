@@ -7,6 +7,10 @@
 	color: white;
 }
 
+/* #shop0001{
+	display: none;
+} */
+
 .main_wrap{
 	display: flex;
 	flex-wrap: wrap;
@@ -116,9 +120,9 @@
 	align-content: center;
 	max-height: 5000px;
 	max-width: 1700px;
-/*	border: 1px solid red;*/
+	/* border: 1px solid red; */
 }
-.catName{
+.sallerName{
 	margin: 5px 0px 0px 0px;
 	text-align: center;
 	height: 50px;
@@ -128,6 +132,7 @@
 	font-weight: 600;
 	color: white;
 	text-shadow:0 0 10px silver;
+	/* border: 1px solid red; */
 }
 a{
 	text-decoration: none;
@@ -135,25 +140,56 @@ a{
 
 			/*			описание			*/
 
+			/* название магазина */
+			.wrapNameShop{
+				height: 70px;
+				width: 100%;
+				/* border: 1px solid red; */
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
+			}
+
+			.logoShop>	a>	img{
+				width: 70px;
+				height: 70px;
+				border-radius: 35px;
+				/* border: 1px solid yellow; */
+			}
+			.shopN{
+				padding: 10px 0px 0px 25px;
+				height: 45px;
+				font-size: 30px;
+			}
+			/* название магазина */
+.productName{
+	width: 100%;
+	height: 50px;
+	/* border: 1px solid red; */
+	text-align: center;
+	font-size: 35px;
+	text-shadow:2px 2px 5px silver;
+}
+
 .description{
 	display: flex;
 	flex-wrap: wrap;
 	align-content:space-around;
-	width: 800px;
-	height: 650px;
+	width: 900px;
+	height: 785px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	border-radius: 25px;
 	margin: 35px 10px 0px 25px;
 }
 .price-wrap{
 	display: flex;
-/*	border: 1px solid blue;*/
-	height: 10%;
-	width: 90%;
+	/* border: 1px solid blue; */
+	height: 8%;
+	width: 100%;
 	
 }
 .price-sale{
-/*	border: 1px solid red;*/
+	/* border: 1px solid red; */
 	height: max-content;
 	width: 50%;
 	text-align: center;
@@ -163,9 +199,9 @@ a{
 	
 }
 .main-price{
-/*	border: 1px solid pink;*/
+	/* border: 1px solid pink; */
 	height: max-content;
-	width: 50%;
+	width: 20%;
 	font-size: 27px;
 	text-decoration: line-through;
 	text-decoration-color: red;
@@ -174,7 +210,7 @@ a{
 }
 .consist-wrap{
 	width: 90%;
-/*	border: 1px solid yellow;*/
+	/* border: 1px solid yellow; */
 	height: max-content;
 	padding-left: 35px;
 	font-size: 27px;
@@ -182,33 +218,35 @@ a{
 }
 .consist{
 	width: 90%;
-/*	border: 1px solid orange;*/
+	/* border: 1px solid orange; */
 	height: max-content;
 	padding-left: 35px;
 	font-size: 20px;
+	text-shadow:none;
 }
 .color-wrap{
 	display: flex;
 	width: 100%;
-/*	border: 1px solid blue;*/
+	/* border: 1px solid blue; */
 	justify-content: space-evenly;
-	height: 50px;
+	height: max-content;
 }
-.col1,.col2,.col3,.col4,.col5{
-	border: solid 1px white;
+#col1,#col2,#col3,#col4,#col5{
+	/* border: solid 1px white; */
 	width: 50px;
 	height: 50px;
 	border-radius: 25px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	cursor: pointer;
 }
 .size-wrap{
 	display: flex;
 	width: 100%;
-/*	border: 1px solid green;*/
+	/* border: 1px solid green; */
 	justify-content: space-evenly;
 	height: 50px;
 }
-.size1, .size2, .size3, .size4, .size5, .size6, .size7{
+#size1, #size2, #size3, #size4, #size5, #size6, #size7,#size8{
 		font-size: 25px;
 		text-shadow:0 0 10px silver;
 	
@@ -219,7 +257,7 @@ a{
 	display: flex;
 	margin-top: 10px;
 	width: 100%;
-/*	border: 1px solid grey;*/
+	/* border: 1px solid grey; */
 	justify-content: space-evenly;
 	align-content: center;
 }
@@ -229,18 +267,34 @@ a{
 	text-align: center;
 	font-size: 21px;
 	border: rgba(255,255,255,0.3) solid 1px;
-	background:rgba(192,192,192,0.2);
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	background: rgba(46, 229, 156, 0.3);
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.4);
 	border-radius: 40px;
 	padding: 5px;
-	
+	cursor: pointer;
+	transition: .3s;	
 }
-.promo{
-	
+.seller{
+background: rgba(46, 229, 156, 0.7);
+box-shadow: 0 1px 10px 0px rgba(255,255,255,0.4);}
+
+.seller:hover{
+	background: rgba(46, 229, 156, 0.85);
+	box-shadow: 0 1px 15px 0px rgba(255,255,255,0.8);
+	transform: translateY(-3px);
+}
+.promo:hover{
+	background: rgba(46, 229, 156, 0.7);
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	transform: translateY(-3px);
 }
 
 
-			/*			описание			*/
+
+
+/* .promo{
+	
+} */
 
 
 
@@ -248,7 +302,8 @@ a{
 			/*			подробности			*/
 
 .details-wrap{
-
+	background:  rgba(192,192,192,0.2);
+	
 	margin-top:20px; 
 	width: 98%;
 	height: max-content;
@@ -273,6 +328,11 @@ a{
 /*	border: 1px solid red;*/
 }
 
+.timeOfShiping>.material-icons, .priceOfShip>.material-icons,.methodsOfShiping>.material-icons,.pay>.material-icons,.priceOfCourier>.material-icons{
+	font-size: 40px;
+	transform: translateY(7px);
+}
+
 /*				!СЛАЙДЕР!    			*/
 
 
@@ -283,8 +343,8 @@ a{
 	justify-content:space-around;
 	align-content: space-around;
 	position: relative;
-	width: 800px;
-	height: 620px;
+	width: 700px;
+	height: 750px;
 	overflow: hidden;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
@@ -292,44 +352,44 @@ a{
 	padding: 15px;
 	margin: 35px 10px 0px 10px;
 }
-.big-pic{
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
 .small	{
-	height: 120px;
+	height: 180px;
 	width: 120px;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	border-radius: 10px;
+
 }
 
 .bottom-pic{
 	display: flex;
 	flex-wrap: wrap;
-	height: 600px;
+	height: 705px;
 	width: 170px;
 	justify-content:space-around;
 	align-content: space-around;
+	/* border: red solid 1px; */
 }
  .big-pic {
 	overflow: hidden;
-	width: 75%;
-	height: 600px;
+	width: 470px;
+	height: 705px;
 	float: right;
+	border: rgba(255,255,255,0.3) solid 2px;
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	border-radius: 30px;
+	
 }
 .big-pic > div {
-	width: 100%;
-	height: 680px;
+	width: 470px;
+	height: 705px;
 /*	position: absolute;*/
 	z-index: 1;
 	overflow: hidden;
-	
 }
 .big-pic > div > img {
-	width: 600px;
-	height: 600px;
+	width: 470px;
+	height: 705px;
 	border-radius: 30px;
 }
 
@@ -338,6 +398,7 @@ a{
 }
 .bottom-pic > div > a > img {
 	width: 120px;
+	height: 180px;
 	border-radius: 10px;
 }
 
@@ -349,7 +410,21 @@ a{
 .big-pic div:not(:target) {
 	-webkit-animation: hidden 1s 1;
 }
-	
+
+
+
+	/* инпут распологается высоко, выше viewport'а  */
+#myInput{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: -1000px;
+}
+
+
+
+
+
 @-webkit-keyframes slide {
 	0% {
 		-webkit-transform: translateX(-100%);
@@ -400,10 +475,6 @@ a{
 /*				!СЛАЙДЕР!    			*/
 
 
-
-
-			/*			подробности			*/
-
 @media (max-width: 1720px){
 	.seller, .promo{
 	width: 45%;
@@ -427,6 +498,10 @@ a{
 		width: 600px;
 		margin: 35px 10px 0px 5px;
 	}
+	.shopN{
+		font-size: 25px;
+		transform: translateY(5px);
+	}
 }
 @media (max-width: 1500px){
 	.seller, .promo{
@@ -435,16 +510,25 @@ a{
 	padding: 5px;
 	font-size: 17px;}
 	
+	.pic-wrap{
+		width: 670px;
+	}
+
 	.description{
-		width: 500px;
-		height: 650px;
+		width: 580px;
 		margin: 35px 10px 0px 5px;
+	}
+	.price-sale{
+		font-size: 35px;	
+	}
+	.main-price{
+		font-size: 25px;
 	}
 	}
 @media (max-width: 1400px){
 	.description{
-		width: 500px;
-		height: 785px;
+		width: 700px;
+		height: 832px;
 		margin: 35px 10px 0px 5px;
 	}
 	.buttons-wrap{
@@ -453,7 +537,29 @@ a{
 	.seller, .promo{
 		margin:10px 20px;
 		width: 100%;
+		font-size: 19px;
+		padding: 3px;
+	}
+	.shopN{
 		font-size: 21px;
+		transform: translateY(8px);
+	}
+	.details{
+		font-size: 25px;
+		text-shadow:2px 2px 5px silver;
+	}
+	
+	.timeOfShiping, .priceOfShip,.methodsOfShiping,.pay,.priceOfCourier{
+		font-size: 21px;
+		margin-left: 100px;
+		width: 80%;
+		padding-bottom: 10px;
+	/*	border: 1px solid red;*/
+	}
+	
+	.timeOfShiping>.material-icons, .priceOfShip>.material-icons,.methodsOfShiping>.material-icons,.pay>.material-icons,.priceOfCourier>.material-icons{
+		font-size: 35px;
+		transform: translateY(8px);
 	}
 	.pic-wrap {
 	display: flex;
@@ -461,8 +567,8 @@ a{
 	justify-content:space-around;
 	align-content: space-around;
 	position: relative;
-	width: 650px;
-	height: 750px;
+	width: 450px;
+	height: 800px;
 	overflow: hidden;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
@@ -470,18 +576,12 @@ a{
 	padding: 15px;
 	margin: 35px 10px 0px 10px;
 }
-.big-pic{
+.small{
+	width: 100px;
+	height: 150px;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
-.small	{
-	height: 120px;
-	width: 120px;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 10px;
-	
+	border-radius: 10px;	
 }
 
 .bottom-pic{
@@ -495,35 +595,37 @@ a{
 }
  .big-pic {
 	overflow: hidden;
-	width: 90%;
+	width: 400px;
 	height: 600px;
 	float: right;
+	border: rgba(255,255,255,0.3) solid 2px;
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	border-radius: 30px;
 	 
 }
 .big-pic > div {
-	width: 100%;
-	height: 680px;
+	width: 400px;
+	height: 600px;
 /*	position: absolute;*/
 	z-index: 1;
-	overflow: hidden;
-	
-	
+	overflow: hidden;	
 }
 .big-pic > div > img {
-	width: 600px;
+	width: 400px;
 	height: 600px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
+
 .bottom-pic > div > a > img {
-	width: 120px;
+	width: 100px;
+	height: 150px;
 	border-radius: 10px;
 }
-
 }
+
 
 
 
@@ -532,8 +634,9 @@ a{
 
 
 @media (max-width: 1300px){
+	
 		.description{
-		width: 700px;
+		width: 750px;
 		height: max-content;
 		margin: 35px 10px 0px 5px;
 		align-content:flex-start;
@@ -552,35 +655,45 @@ a{
 		width: 100%;
 		font-size: 21px;
 	}
-	.pic-wrap {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content:space-around;
-	align-content: space-around;
-	position: relative;
-	width:700px;
-	height: 750px;
-	overflow: hidden;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-	padding: 15px;
-	margin: 35px 10px 0px 10px;
-}
-.big-pic{
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
-.small	{
-	height: 120px;
-	width: 120px;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 10px;
+	.shopN{
+		font-size: 32px;
+		transform: translateY(0px);
 	
+	}
+	.shopN	>a>	nobr{
+		display: none;
+	}
+	.pic-wrap {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content:space-around;
+		align-content: space-around;
+		position: relative;
+		width: 450px;
+		height: 800px;
+		overflow: hidden;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+		padding: 15px;
+		margin: 35px 10px 0px 10px;
+	}
+	.small{
+		width: 100px;
+		height: 150px;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 10px;	
+	}
+.big-pic{
+	overflow: hidden;
+	width: 400px;
+	height: 600px;
+	float: right;
+	border: rgba(255,255,255,0.3) solid 2px;
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	border-radius: 30px;
 }
-
 .bottom-pic{
 	display: flex;
 	flex-wrap: wrap;
@@ -590,16 +703,9 @@ a{
 	align-content: space-around;
 	
 }
- .big-pic {
-	overflow: hidden;
-	width: 90%;
-	height: 600px;
-	float: right;
-	 
-}
 .big-pic > div {
-	width: 100%;
-	height: 680px;
+	width: 400px;
+	height: 600px;
 /*	position: absolute;*/
 	z-index: 1;
 	overflow: hidden;
@@ -607,16 +713,16 @@ a{
 	
 }
 .big-pic > div > img {
-	width: 630px;
+	width: 400px;
 	height: 600px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
 .bottom-pic > div > a > img {
-	width: 120px;
+	width: 100px;
+	height: 150px;
 	border-radius: 10px;
 }
 	.name{
@@ -635,8 +741,8 @@ a{
 	.main{
 	max-height: 4000px;
 	max-width: 870px;
-	}}
-	
+	}
+}
 @media (max-width: 768px){
 	
 		.description{
@@ -647,6 +753,7 @@ a{
 	}
 	.timeOfShiping, .priceOfShip,.methodsOfShiping,.pay,.priceOfCourier{
 		margin-left: 35px;
+		font-size: 19px;
 	}
 	.color-wrap{
 		margin: 10px 0px;
@@ -657,7 +764,7 @@ a{
 	.seller, .promo{
 		margin:10px 20px;
 		width: 100%;
-		font-size: 21px;
+		font-size: 19px;
 	}
 	.pic-wrap {
 	display: flex;
@@ -665,23 +772,27 @@ a{
 	justify-content:space-around;
 	align-content: space-around;
 	position: relative;
-	width:700px;
-	height: 750px;
+	width: 450px;
+	height: 650px;
 	overflow: hidden;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	border-radius: 30px;
 	padding: 15px;
-	margin: 35px 10px 0px 10px;
+	margin: 10px 10px 0px 10px;
 }
 .big-pic{
+	overflow: hidden;
+	width: 300px;
+	height: 450px;
+	float: right;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	border-radius: 30px;
 }
 .small	{
-	height: 120px;
-	width: 120px;
+	width: 100px;
+	height: 150px;
 	border: rgba(255,255,255,0.3) solid 2px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	border-radius: 10px;
@@ -697,13 +808,6 @@ a{
 	align-content: space-around;
 	
 }
- .big-pic {
-	overflow: hidden;
-	width: 90%;
-	height: 500px;
-	float: right;
-	 
-}
 .big-pic > div {
 /*
 	width: 100%;
@@ -716,16 +820,16 @@ a{
 	
 }
 .big-pic > div > img {
-	width: 500px;
-	height: 500px;
+	width: 300px;
+	height: 450px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
 .bottom-pic > div > a > img {
-	width: 120px;
+	width: 100px;
+	height: 150px;
 	border-radius: 10px;
 }
 	
@@ -744,7 +848,7 @@ a{
 	.contacts > a > img{
 	width: 70%;
 }
-	.catName{
+	.sallerName{
 	font-size: 27px;
 	height: 40px;
 	margin-top: 5px;
@@ -760,15 +864,18 @@ a{
 	max-height: 4100px;
 	max-width: 580px;
 	margin-top: 5px;
-}
-}
+}}
+
 
 @media (max-width: 650px){
-	
+	#size1, #size2, #size3, #size4, #size5, #size6, #size7,#size8{
+		font-size: 22px;
+		transform: translateY(5px);
+	}
 	.description{
 		width: 700px;
 		height: max-content;
-		margin: 35px 10px 0px 5px;
+		margin: 20px 10px 0px 5px;
 		align-content:flex-start;
 	}
 	.timeOfShiping, .priceOfShip,.methodsOfShiping,.pay,.priceOfCourier{
@@ -790,50 +897,47 @@ a{
 		font-size: 25px;
 	}
 	.pic-wrap {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content:space-around;
-	align-content: space-around;
-	position: relative;
-	width:700px;
-	height: 570px;
-	overflow: hidden;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-	padding: 15px;
-	margin: 35px 10px 0px 10px;
-}
-.big-pic{
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
-.small	{
-	height: 100px;
-	width: 100px;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 10px;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content:space-around;
+		align-content: space-around;
+		position: relative;
+		width: 450px;
+		height: 590px;
+		overflow: hidden;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+		padding: 15px;
+		margin: 5px 10px 0px 10px;
+	}
+	.big-pic{
+		overflow: hidden;
+		width: 300px;
+		height: 450px;
+		float: right;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+	}
+	.small	{
+		width: 90px;
+		height: 135px;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 10px;
+		
+	}
 	
-}
-
-.bottom-pic{
-	display: flex;
-	flex-wrap: wrap;
-	width: 600px;
-	height: 170px;
-	justify-content:space-around;
-	align-content: space-around;
-	
-}
- .big-pic {
-	overflow: hidden;
-	width: 100%;
-	height: 400px;
-	float: right;
-	 
-}
+	.bottom-pic{
+		display: flex;
+		flex-wrap: wrap;
+		width: 600px;
+		height: 160px;
+		justify-content:space-around;
+		align-content: space-around;
+		
+	}
 .big-pic > div {
 /*
 	width: 100%;
@@ -846,25 +950,18 @@ a{
 	
 }
 .big-pic > div > img {
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 450px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
 .bottom-pic > div > a > img {
-	width: 100px;
+	width: 90px;
+	height: 135px;
 	border-radius: 10px;
 }
-	
-	
-	
-	
-	
-	
-	
 	
 	.name{
 	width: 60%;
@@ -880,7 +977,7 @@ a{
 	.contacts > a > img{
 	width: 70%;
 }
-	.catName{
+	.sallerName{
 	font-size: 22px;
 	margin-top: 20px;
 	height: 30px;
@@ -900,15 +997,70 @@ a{
 }
 
 @media (max-width: 480px){
+	.shopN{
+		font-size: 25px;
+		transform: translateY(0px);
+	}
+	.logoShop>	a>	img{
+		width: 55px;
+		height: 55px;
+		border-radius: 35px;
+		/* border: 1px solid yellow; */
+	}
+	.wrapNameShop{
+		height: 55px;
+		width: 100%;
+		border: 1px solid red;
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.back, .mainPage{
+		height: max-content;
+		border: rgba(255,255,255,0.3) solid 1px;
+		background:rgba(192,192,192,0.2);
+		text-align: center;
+		vertical-align: middle;
+		transition: .4s;
+		color: white;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 25px;
+		padding: 2px 10px;
+		font-size: 17px;
+		font-weight: 300;
+	}
+	
 	.description{
 		width: 700px;
 		height: max-content;
-		margin: 35px 10px 0px 5px;
+		margin: 20px 10px 0px 5px;
 		align-content:flex-start;
+	}
+	.productName{
+		height: 40px;
+		font-size: 30px;
+	}
+	.consist-wrap{
+		padding-left: 35px;
+		font-size: 23px;
+		text-shadow:0 0 10px silver;
+	}
+	.consist{
+		padding-left: 5px;
+		font-size: 18px;
+		text-shadow:none;
+	}
+	#size1, #size2, #size3, #size4, #size5, #size6, #size7,#size8{
+		font-size: 20px;
+		transform: translateY(10px);
 	}
 	.timeOfShiping, .priceOfShip,.methodsOfShiping,.pay,.priceOfCourier{
 		margin-left: 35px;
 		font-size: 17px;
+	}
+	#col1,#col2,#col3,#col4,#col5{
+		width: 40px;
+		height: 40px;	
 	}
 	.color-wrap{
 		margin: 10px 0px;
@@ -925,50 +1077,48 @@ a{
 		font-size: 23px;
 	}
 	.pic-wrap {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content:space-around;
-	align-content: space-around;
-	position: relative;
-	width:700px;
-	height: 500px;
-	overflow: hidden;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-	padding: 0px 15px;
-	margin: 5px 10px 0px 10px;
-}
-.big-pic{
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
-.small	{
-	height: 90px;
-	width: 90px;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 10px;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content:space-around;
+		align-content: space-around;
+		position: relative;
+		width: 450px;
+		height: 575px;
+		overflow: hidden;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+		padding: 15px;
+		margin: 10px 10px 0px 10px;
+	}
+	.big-pic{
+		overflow: hidden;
+		width: 280px;
+		height: 420px;
+		float: right;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+	}
+	.small	{
+		width: 90px;
+		height: 135px;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 10px;
+		
+	}
 	
-}
+	.bottom-pic{
+		display: flex;
+		flex-wrap: wrap;
+		width: 600px;
+		height: 150px;
+		justify-content:space-around;
+		align-content: space-around;
+		
+	}
 
-.bottom-pic{
-	display: flex;
-	flex-wrap: wrap;
-	width: 350px;
-	height: 100px;
-	justify-content:space-around;
-	align-content: space-around;
-	
-}
- .big-pic {
-	overflow: hidden;
-	width: 100%;
-	height: 350px;
-	float: right;
-	 
-}
 .big-pic > div {
 /*
 	width: 100%;
@@ -981,16 +1131,17 @@ a{
 	
 }
 .big-pic > div > img {
-	width: 350px;
-	height: 350px;
+	width: 280px;
+	height: 420px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
+
 .bottom-pic > div > a > img {
 	width: 90px;
+	height: 135px;
 	border-radius: 10px;
 }
 	
@@ -1013,7 +1164,7 @@ a{
 	.contacts > a > img{
 	width: 70%;
 }
-	.catName{
+	.sallerName{
 	font-size: 20px;
 	margin-top: 20px;
 	height: 30px;
@@ -1033,17 +1184,27 @@ a{
 
 
 @media (max-width: 414px){
-	
-	
 	.description{
 		width: 700px;
 		height: max-content;
-		margin: 35px 10px 0px 5px;
+		margin: 20px 10px 0px 5px;
 		align-content:flex-start;
 	}
 	.timeOfShiping, .priceOfShip,.methodsOfShiping,.pay,.priceOfCourier{
 		margin-left: 35px;
-		font-size: 17px;
+		font-size: 15px;
+	}
+	.timeOfShiping>.material-icons, .priceOfShip>.material-icons,.methodsOfShiping>.material-icons,.pay>.material-icons,.priceOfCourier>.material-icons{
+		font-size: 27px;
+		transform: translateY(5px);
+	}
+	
+	#col1,#col2,#col3,#col4,#col5{
+		border: solid 1px white;
+		width: 35px;
+		height: 35px;
+		border-radius: 25px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	}
 	.color-wrap{
 		margin: 10px 0px;
@@ -1054,56 +1215,77 @@ a{
 	.seller, .promo{
 		margin:10px 20px;
 		width: 100%;
-		font-size: 19px;
+		font-size: 17px;
+	}
+	#size1, #size2, #size3, #size4, #size5, #size6, #size7,#size8{
+		font-size: 18px;
+		transform: translateY(10px);
 	}
 	.details{
 		font-size: 21px;
 	}
+	.price-sale{
+	
+		height: max-content;
+		width: 50%;
+		text-align: center;
+		font-size: 27px;
+		text-shadow:2px 2px 5px silver;	
+	}
+	.main-price{
+		
+		height: max-content;
+		width: 50%;
+		font-size: 19px;
+		text-decoration: line-through;
+		text-decoration-color: red;
+		opacity: 35%;
+		text-shadow:0 0 5px silver;
+	}
 	.pic-wrap {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content:space-around;
-	align-content: space-around;
-	position: relative;
-	width:700px;
-	height: 450px;
-	overflow: hidden;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-	padding: 0px 15px;
-	margin: 5px 10px 0px 10px;
-}
-.big-pic{
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
-.small	{
-	height: 80px;
-	width: 80px;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 10px;
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content:space-around;
+		align-content: space-around;
+		position: relative;
+		width: 450px;
+		height: 520px;
+		overflow: hidden;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+		padding: 15px;
+		margin: 10px 10px 0px 10px;
+	}
+	.big-pic{
+		overflow: hidden;
+		width: 260px;
+		height: 390px;
+		float: right;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+	}
+	.small	{
+		margin-top: 10px;
+		width: 75px;
+		height: 113px;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 10px;
+		
+	}
 	
-}
-
-.bottom-pic{
-	display: flex;
-	flex-wrap: wrap;
-	width: 350px;
-	height: 100px;
-	justify-content:space-around;
-	align-content: space-around;
-	
-}
- .big-pic {
-	overflow: hidden;
-	width: 100%;
-	height: 300px;
-	float: right;
-	 
-}
+	.bottom-pic{
+		display: flex;
+		flex-wrap: wrap;
+		width: 600px;
+		height: 120px;
+		justify-content:space-around;
+		align-content: space-around;
+		
+	}
+ 
 .big-pic > div {
 /*
 	width: 100%;
@@ -1116,26 +1298,19 @@ a{
 	
 }
 .big-pic > div > img {
-	width: 290px;
-	height: 300px;
+	width: 260px;
+	height: 390px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
+
 .bottom-pic > div > a > img {
-	width: 80px;
+	width: 75px;
+	height: 113px;
 	border-radius: 10px;
 }
-	
-	
-	
-	
-	
-	
-	
-	
 	.name{
 	width: 90%;
 }
@@ -1150,7 +1325,7 @@ a{
 	.contacts > a > img{
 	width: 75%;
 }
-	.catName{
+	.sallerName{
 	font-size: 20px;
 	margin-top: 20px;
 	height: 30px;
@@ -1169,12 +1344,10 @@ a{
 }
 
 @media (max-width: 360px){
-	
-	
-		.description{
+	.description{
 		width: 350px;
 		height: max-content;
-		margin: 35px 10px 0px 5px;
+		margin: 20px 10px 0px 5px;
 		align-content:flex-start;
 	}
 	.timeOfShiping, .priceOfShip,.methodsOfShiping,.pay,.priceOfCourier{
@@ -1188,58 +1361,58 @@ a{
 		flex-wrap: wrap;
 	}
 	.seller, .promo{
+		padding: 3px;
 		margin:10px 10px;
 		width: 80%;
 		font-size: 15px;
 	}
+	
 	.details{
 		font-size: 21px;
 	}
 	.pic-wrap {
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content:space-around;
-	align-content: space-around;
-	position: relative;
-	width:700px;
-	height: 400px;
-	overflow: hidden;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-	padding: 0px 15px;
-	margin: 5px 10px 0px 10px;
-}
-.big-pic{
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 30px;
-}
-.small	{
-	height: 65px;
-	width: 65px;
-	border: rgba(255,255,255,0.3) solid 2px;
-	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
-	border-radius: 10px;
-	
-}
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content:space-around;
+		align-content: space-around;
+		position: relative;
+		width: 450px;
+		height: 450px;
+		overflow: hidden;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+		padding: 15px;
+		margin: 15px 10px 0px 10px;
+	}
+	.big-pic{
+		overflow: hidden;
+		width: 225px;
+		height: 340px;
+		float: right;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 30px;
+	}
+	.small	{
+		margin-top: 10px;
+		width: 65px;
+		height: 98px;
+		border: rgba(255,255,255,0.3) solid 2px;
+		box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+		border-radius: 10px;
+		
+	}
+	.bottom-pic{
+		display: flex;
+		flex-wrap: wrap;
+		width: 600px;
+		height: 120px;
+		justify-content:space-around;
+		align-content: space-around;
+		
+	}
 
-.bottom-pic{
-	display: flex;
-	flex-wrap: wrap;
-	width: 350px;
-	height: 80px;
-	justify-content:space-around;
-	align-content: space-around;
-	
-}
- .big-pic {
-	overflow: hidden;
-	width: 100%;
-	height: 280px;
-	float: right;
-	 
-}
 .big-pic > div {
 /*
 	width: 100%;
@@ -1252,33 +1425,32 @@ a{
 	
 }
 .big-pic > div > img {
-	width: 250px;
-	height: 280px;
+	width: 225px;
+	height: 340px;
 	border-radius: 30px;
 }
 
-.bottom-pic > div > a {
+/* .bottom-pic > div > a {
 /*	display: block;*/
-}
+ 
 .bottom-pic > div > a > img {
 	width: 65px;
+	height: 98px;
 	border-radius: 10px;
 }
-	
-	.col1,.col2,.col3,.col4,.col5{
+#col1,#col2,#col3,#col4,#col5{
 	border: solid 1px white;
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	border-radius: 25px;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 }
 
-.size1, .size2, .size3, .size4, .size5, .size6, .size7{
-		font-size: 19px;
+#size1, #size2, #size3, #size4, #size5, #size6, #size7,#size8{
+		font-size: 16px;
 		text-shadow:0 0 10px silver;
 	
 }
-	
 	.consist{
 	width: 90%;
 	padding-left: 10px;
@@ -1295,27 +1467,19 @@ a{
 	height: max-content;
 	width: 50%;
 	text-align: center;
-	font-size: 30px;
-	text-shadow:2px 2px 5px silver;
-	
-	
+	font-size: 25px;
+	text-shadow:2px 2px 5px silver;	
 }
 .main-price{
 	
 	height: max-content;
 	width: 50%;
-	font-size: 22px;
+	font-size: 17px;
 	text-decoration: line-through;
 	text-decoration-color: red;
 	opacity: 35%;
 	text-shadow:0 0 5px silver;
 }
-	
-	
-	
-	
-	
-	
 	.name{
 	width: 100%;
 }
@@ -1330,7 +1494,7 @@ a{
 	.contacts > a > img{
 	width: 85%;
 }
-	.catName{
+	.sallerName{
 	font-size: 20px;
 	margin-top: 20px;
 	height: 30px;
@@ -1346,9 +1510,7 @@ a{
 	max-width: 295px;
 	margin-top: 5px;
 }
-	}
-
-
+}
 
 
 

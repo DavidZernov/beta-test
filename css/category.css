@@ -37,7 +37,7 @@
 	white-space:pre;
 }
 
-.name > .material-icons{
+.name > #globalIcon{
 	font-size: calc(55px + 40 * (100vw / 1920));
 	padding-left:12px;
     color: white;
@@ -67,7 +67,6 @@
 .contacts > a > img{
 	width: 17%;
 }
-
 .main{
 	margin-top: 30px;
 	display: flex;
@@ -76,9 +75,10 @@
 	align-content: center;
 	max-height: 1500px;
 	max-width: 1000px;
+	/* border:  1px solid red; */
 	}
 
-.f{
+#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	border: rgba(255,255,255,0.5) solid 3px;
 	background:rgba(192,192,192,0.2);
 	width: 200px;
@@ -90,8 +90,105 @@
 	color: white;
 	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
 	border-radius: 25px;
+	
 }
-.f:hover {
+#clothes:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#cosmetics:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#products:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#house:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#auto:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#presents:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#sales:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#sport:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#entertainment:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#toys:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#accessories:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#pets:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#mothers:hover {
   background: #2EE59D;
   box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
   color: white;
@@ -103,18 +200,30 @@ a{
 	text-decoration: none;
 }
 
-.t,.icon{
+#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText,.icon{
 	height: max-content;
 }
 
-.t{
+#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
  	margin-top:25px;
 	height: max-content;
 	font-size: 18px;
 	font-family: 'Kaushan Script', cursive;
 	font-weight: 600;
 }
-.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
  	margin-top:45px;
 	height: max-content;
 	font-size: 60px;
@@ -144,14 +253,26 @@ a{
 	max-width: 890px;
 	}
 	
-	.f{
+	#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	width: 220px;
 	height: 220px;
 	}
-	.t{
+	#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
 	font-size: 22px;
 	}
-	.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
 	font-size: 80px;
 	}
 	
@@ -180,14 +301,26 @@ a{
 	max-width: 700px;
 	}
 	
-	.f{
+	#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	width: 180px;
 	height: 180px;
 	}
-	.t{
+	#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
 	font-size: 19px;
 	}
-	.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
 	font-size: 55px;
 	margin-top:30px;
 	}
@@ -220,14 +353,26 @@ a{
 
 	}
 	
-	.f{
+	#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	width: 150px;
 	height: 160px;
 	}
-	.t{
+	#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
 	font-size: 18px;
 	}
-	.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
 	font-size: 55px;
 	margin-top:20px;
 	}
@@ -259,15 +404,27 @@ a{
 	max-width: 470px;
 	}
 	
-	.f{
+	#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	width: 110px;
 	height: 125px;
 	}
-	.t{
+	#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
 	font-size: 14px;
 	margin-top:15px;
 	}
-	.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
 	font-size: 43px;
 	margin-top: 18px;
 	}
@@ -301,15 +458,27 @@ a{
 	max-width: 480px;
 	}
 	
-	.f{
+	#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	width: 95px;
 	height: 110px;
 	}
-	.t{
+	#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
 	font-size: 14px;
 	margin-top:13px;
 	}
-	.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
 	font-size: 35px;
 	margin-top: 15px;
 	}
@@ -341,15 +510,27 @@ a{
 	max-width: 460px;
 	}
 	
-	.f{
+	#clothes,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
 	width: 85px;
 	height: 100px;
 	}
-	.t{
+	#clothesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
 	font-size: 12px;
 	margin-top:10px;
 	}
-	.icon > .material-icons{
+	.icon > #clothesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
 	font-size: 35px;
 	margin-top: 15px;
 	}

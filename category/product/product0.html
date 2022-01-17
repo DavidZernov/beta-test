@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="shop0001">
 <head>
 <meta charset="utf-8">
 <title>product0</title>
@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
 </head>
 
-<body class="body">
+<body class="body" onload="change1()">
 <!--			!Шапка!			-->
 	<div class="main_wrap">
 		<div class="hedder">
@@ -31,10 +31,22 @@
 			<a href="../../index.html"><div class="mainPage">Главная</div></a> 
 		</div>
 		
-		
 	<!--			!Шапка!			-->
+
 	
-		<div class="catName">Длинное название из слов</div> <!--	 название товара-->
+	<!-- 			название магазина 			-->
+	<div class="wrapNameShop">
+		<div class="logoShop">
+			<a href="https://www.instagram.com/zda_00/?hl=ru" id="shop0001HREF">
+				<img src="../../images/123.jpg" alt=""	id="shop0001Logo">
+			</a>
+		</div>
+			<div class="shopN"> <a href="https://www.instagram.com/zda_00/?hl=ru" id="shop0001HREF"> Z N W R <nobr> -  Бренд дизайнерской одежды для людей в гармонии с собой и миром вокруг </nobr></a>
+			</div>
+	</div>
+	<!-- 			название магазина 			-->
+
+
 		
 	<!--			!СЛАЙДЕР!			-->
 	
@@ -42,97 +54,135 @@
 	<div class="main">
 	<div class="pic-wrap">
 	
-		
+		<!--			!Маленькие картинки!			-->
 	<div class="bottom-pic">
-		<div class="small"><a href="#slide1"><img src="../../images/9+.PNG" alt=""/></a></div>
-		<div class="small"><a href="#slide2"><img src="../../images/9+.PNG" alt=""/></a></div>
-		<div class="small"><a href="#slide3"><img src="../../images/H101f75726e6947a0bc909fac1653428a0.jpg" alt=""/></a></div>
+		<div class="small">
+			<a href="#slide1">
+				<img id="sPic1" src="../../images/9+.PNG" alt=""/></a></div>
+		<div class="small">
+			<a href="#slide2">
+				<img id="sPic2" src="../../images/9+.PNG" alt=""/></a></div>
+		<div class="small">
+			<a href="#slide3">
+				<img id="sPic3" src="../../images/H101f75726e6947a0bc909fac1653428a0.jpg" alt=""/></a></div>
 	</div>
-	
+		<!--			!Маленькие картинки!			-->
+
+		<!--			!Большие картинки!			-->
 		<div class="big-pic">
-		<div id="slide1"><img src="../../images/9+.PNG" alt=""  /></div>
-		<div id="slide2"><img src="../../images/9+.PNG" alt=""  /></div>
-		<div id="slide3"><img src="../../images/H101f75726e6947a0bc909fac1653428a0.jpg" alt="" /></div></div></div>
-		
-<!--
-		<script>
-		function loadFirstPic() {
-			document.getElementById("slide1").style.display = "block";
-		}
-	</script>
--->
-		
-		
+		<div id="slide1">
+			<img id="bPic1" src="../../images/9+.PNG" alt=""  /></div>
+		<div id="slide2">
+			<img id="bPic2" src="../../images/9+.PNG" alt=""  /></div>
+		<div id="slide3">
+			<img id="bPic3" src="../../images/H101f75726e6947a0bc909fac1653428a0.jpg" alt="" /></div></div></div>
+		<!--			!Большие картинки!			-->
+
+
 		<!--			!СЛАЙДЕР!			-->
 		
 		
 		<!--			!Описание!			-->
 		<div class="description">
+			
+			<div class="productName">
+				Желет
+			</div>
+
+
+			<div class="consist-wrap"> Описание:
+				<div class="consist">Состав <br> 
+					СоставСоставСоставСостав<br>
+					СоставСоставСоставСостав<br>
+					СоставСоставСостав<br>
+					СоставСоставСоставСостав<br>
+					СоставСоставСостав<br>
+					СоставСоставСостав<br>
+					СоставСоставСостав<br>
+					СоставСоставСостав<br>
+					СоставСоставСостав<br>
+
+				</div>
+			</div>
+			
+			<!--			!Цвета	!			-->
+			<div class="color-wrap"> 
+				<div id="col1" onclick="change1()"></div>
+				<div id="col2" onclick="change2()"></div>
+				<div id="col3" onclick="change3()"></div>
+				<div id="col4" onclick="change4()"></div>
+				<div id="col5" onclick="change5()"></div>
+			</div>
+			<!--			!Цвета	!			-->
+
+
+
+			<!--			!Размеры	!			-->
+			<div class="size-wrap">
+				<div id="size1">ONE SIZE</div>
+				<div id="size2">XS</div>
+				<div id="size3">S</div>
+				<div id="size4">M</div>
+				<div id="size5">L</div>
+				<div id="size6">XL</div>
+				<div id="size7">XXL</div>
+				<div id="size8">XXXL</div>
+			</div>
+			<!--			!Размеры	!			-->
+
 			<div class="price-wrap">
 				<div class="price-sale">50BYN</div>
 				<div class="main-price">55BYN</div>
 			</div>
-			
-			<div class="consist-wrap"> Описание:
-				<div class="consist">Состав <br> СоставСоставСоставСостав<br>СоставСоставСоставСостав<br>СоставСоставСостав<br>СоставСоставСоставСостав</div>
-			</div>
-			
-			
-			<div class="color-wrap"> 
-				<div class="col1"></div>
-				<div class="col2"></div>
-				<div class="col3"></div>
-				<div class="col4"></div>
-				<div class="col5"></div>
-			</div>
-			
-			<div class="size-wrap">
-				<div class="size1">XS</div>
-				<div class="size2">S</div>
-				<div class="size3">M</div>
-				<div class="size4">L</div>
-				<div class="size5">XL</div>
-				<div class="size6">XXL</div>
-				<div class="size7">XXXL</div>
-			</div>
-			
+
+
 		
-			
-			
+			<!--			!Кнопки	!			-->
+		
 			<div class="buttons-wrap">
-				<div class="seller">Заказать данный товар <br> у продавца</div>
-				<div class="promo">Получить ПРОМОКОД <br> (нажмите чтобы скопировать) </div>
+				<div class="seller" >Перейти к заказу <br> данного товара</div>
+				
+				<div class="promo" onclick="copyPromo()">Получить ПРОМОКОД <br> (нажмите чтобы скопировать) </div>
+
+				<!-- инпут распологается высоко, выше viewport'а -->
+				<input type="text" value="Добрый день! Мой промокод - GlobalShop" id="myInput">
 			</div>
-			
 		</div>
-			<!--			!Описание!			-->
-	
-	
-	
-	
-	
-			
+			<!--			!Кнопки	!			-->
+		
+
+
 			<!--			!Подробности!		-->
 	
 	
 			<div class="details-wrap">
-				<div class="details">Дополнительная информация</div>
+				<div class="details">Покупателям</div>
 				
-				<div class="timeOfShiping">Время доставки: 2-3 дня.</div>
-				<div class="priceOfShip">Стоимость доставки почтой: 5BYN.</div>
-				<div class="priceOfCourier">Стоимость доставки курьером по Минску: 5BYN.</div>
-				<div class="methodsOfShiping">Виды доставки: Белпочта,  Европочта, Курьером.</div>
-				<div class="pay">Способы оплаты: При получении, наличными.</div>
+				<!-- <div class="timeOfShiping">Формы и способы оплаты:</div>
+				<div class="pay">Оплата при получении</div>
+				<div class="priceOfCourier">При доставке курьером, самовывозе Вы оплачиваете заказ наличными или банковской картой после проверки комплектности и качества товара</div>
+				<div class="pay">Наложенный платеж</div> -->
+				
+				
+				
+				<div class="methodsOfShiping"><span class="material-icons">local_shipping</span>	
+					&nbsp; Виды доставки: Белпочта,  Европочта, Курьером.</div>
+				<div class="timeOfShiping"><span class="material-icons">schedule</span>	
+					&nbsp; Время доставки: 2-3 дня.</div>
+				<div class="priceOfShip"><span class="material-icons">savings</span>	
+					&nbsp; Стоимость доставки почтой: ~5BYN.</div>
+				<div class="priceOfCourier"><span class="material-icons">savings</span>	
+					&nbsp; Стоимость доставки курьером по Минску: 5BYN.</div>
+				<div class="pay"><span class="material-icons">payments</span>	
+						&nbsp; Способы оплаты: При получении, наличными.</div>
 
 			</div>
 
-	
-	
-	
 			<!--			!Подробности!		-->
 	</div>
 	</div>
 	
+
 					<!--	    ФОН     	 -->
 
 						<div id="stars"></div>
@@ -140,6 +190,9 @@
 						<div id="stars3"></div>
 
 					<!--	    ФОН     	 -->
+	
+	<script src="../../js/jsColorChange.js"></script>
+	<script src="../../js/jsPromo.js"></script>
 
 </body>
 </html>

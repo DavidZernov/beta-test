@@ -2,6 +2,22 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+#shop0001{
+	display: inline-block;
+}
+#shop0002{
+	display: inline-block;
+}
+#shop0003{
+	display: inline-block;
+}
+#shop0004{
+	display: inline-block;
+}
+#shop0005{
+	display: inline-block;
+}
+
 .main_wrap{
 	display: flex;
 	flex-wrap: wrap;
@@ -122,16 +138,45 @@
 	max-height: 5000px;
 	max-width: 1300px;
 }
-.sallerName{
-	width: 100%;
-	padding-top: 10px;
-	height: 45px;
-	font-size: 30px;
-	font-family: 'Kaushan Script', cursive;
-	font-weight: 600;
-	text-align: left;
-	padding-left: 100px;
-}
+							.wrapName{
+								display: flex;
+								justify-content:flex-start;
+								/* border: 1px solid green; */
+								width: 100%;
+								height: 75px;
+							}
+							.sallerLogo > a > img{
+								width: 70px;
+								height: 70px;
+								border-radius: 35px;
+							}
+							.sallerName{
+								width: max-content;
+								padding-top: 20px;
+								height: 45px;
+								font-size: 30px;
+								font-family: 'Kaushan Script', cursive;
+								font-weight: 600;
+								text-align: left;
+								color: white;
+								
+								/* padding-left: 100px; */
+								/* border: 1px solid blue; */
+							}
+							.sallerName> a > nobr{
+								color: white;
+								font-size: 23px;
+							}
+							.sallerName> a{
+								color: white;
+							}
+							.sallerLogo{
+								padding-top: 10px;
+								width: 10%;
+								height: 45px;
+								/* border: 1px solid red; */
+							}
+							
 .saller{
 	border: rgba(255,255,255,0.5) solid 3px;
 	background:rgba(192,192,192,0.2);
@@ -147,6 +192,7 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .product{
 	border: rgba(255,255,255,0.5) solid 3px;
 	background:rgba(192,192,192,0.2);
@@ -170,7 +216,7 @@
 }
 .product>img{
 	height: 210px;       
-	width: 150px;
+	width: 140px;
 	margin-top: 10px;
 	border-radius: 10px;
 }
@@ -186,6 +232,13 @@ a{
 }
 
 @media (max-width: 1300px){
+	.sallerName> a > nobr{
+		display: none;
+	}
+	.sallerName{
+		font-size: 32px;
+		transform: translateY(2px);
+	}
 	.name{
 	width: 60%;
 }
@@ -217,7 +270,7 @@ a{
 }
 	.product>img{
 	height: 180px;
-	width: 140px;
+	width: 120px;
 	margin-top: 10px;
 }	
 }
@@ -256,7 +309,7 @@ a{
 }
 	.product>img{
 	height: 165px;
-	width: 120px;
+	width: 110px;
 	margin-top: 10px;
 }
 	.catName{
@@ -308,7 +361,7 @@ a{
 	height: 210px;
 }
 	.product>img{
-	height: 145px;
+	height: 150px;
 	width: 100px;
 	margin-top: 10px;
 }
@@ -330,6 +383,19 @@ a{
 }
 
 @media (max-width: 480px){
+	.back, .mainPage{
+		font-size: 17px;	
+	}
+	.sallerName{
+		font-size: 25px;
+		transform: translateY(0px);
+	}
+	.sallerLogo > a > img{
+		margin-left: 10px;
+		width: 55px;
+		height: 55px;
+		border-radius: 35px;
+	}
 	.name{
 	width: 60%;
 }
@@ -363,12 +429,11 @@ a{
 }
 	.product>img{
 	height: 130px;
-	width: 95px;
+	width: 86px;
 	margin-top: 10px;
 }
 	.catName{
 	font-size: 20px;
-	margin-top: 20px;
 	height: 30px;
 }
 	.sallerName{
@@ -417,7 +482,7 @@ a{
 }
 	.product>img{
 	height: 110px;
-	width: 75px;
+	width: 72px;
 	margin-top: 10px;
 }
 	.catName{
@@ -437,6 +502,9 @@ a{
 }
 
 @media (max-width: 360px){
+	.sallerName{
+	margin-left: 5px;
+	}
 	.name{
 	width: 100%;
 }
@@ -470,7 +538,7 @@ a{
 }
 	.product>img{
 	height: 150px;
-	width: 105px;
+	width: 100px;
 	margin-top: 10px;
 }
 	.catName{
