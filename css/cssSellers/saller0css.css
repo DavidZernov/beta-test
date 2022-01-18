@@ -2,22 +2,6 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-#shop0001{
-	display: inline-block;
-}
-#shop0002{
-	display: inline-block;
-}
-#shop0003{
-	display: inline-block;
-}
-#shop0004{
-	display: inline-block;
-}
-#shop0005{
-	display: inline-block;
-}
-
 .main_wrap{
 	display: flex;
 	flex-wrap: wrap;
@@ -137,6 +121,7 @@
 	align-content: center;
 	max-height: 5000px;
 	max-width: 1300px;
+	border: 1px solid red;
 }
 							.wrapName{
 								display: flex;
@@ -258,6 +243,7 @@ a{
 }
 	.saller{
 	margin: 20px 20px;
+
 }
 	
 	.t{

@@ -7,9 +7,59 @@
 	color: white;
 }
 
-/* #shop0001{
+
+/* НОМЕР МАГАЗИНА */
+/* #shop0001n1{
 	display: none;
 } */
+/* НОМЕР МАГАЗИНА */
+
+
+
+/* LOCK SHOP */
+#lockshop0001n1{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 23px;
+	margin-top: 150px;
+	justify-content: center;
+	width: 1000px;
+	display: none;
+	/* border: 1px solid red; */
+}
+.noactive,.block,.inst_button{
+	text-align: center;
+}
+.block{
+	margin: 20px 0px 50px;
+}
+.inst_button{
+	height: max-content;
+	width: 600px;
+	border: rgba(255,255,255,0.3) solid 1px;
+	background:rgba(192,192,192,0.2);
+	text-align: center;
+	vertical-align: middle;
+	transition: .4s;
+	color: white;
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	border-radius: 25px;
+	padding: 2px 10px;
+}
+.inst_button:hover{
+background: #2EE59D;
+box-shadow: 0 10px 15px rgba(46, 229, 157, .3);
+color: white;
+transform: translateY(-3px);
+border: rgba(255,255,255,0.70) solid 2px;
+text-shadow: none;
+}
+/* LOCK SHOP */
+
+
+
+
+
 
 .main_wrap{
 	display: flex;
@@ -17,6 +67,7 @@
 	max-width: 100%;
 	justify-content: center;
 /*	border: 1px solid blue;*/
+
 }
 .hedder{
 	border-bottom-left-radius: 30px;
