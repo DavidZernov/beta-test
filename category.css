@@ -1,0 +1,556 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.main_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+	justify-content: center;
+}
+
+.hedder{
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Kaushan Script', cursive;
+	background:   rgba(81,198,240,0.1);
+	color: white;
+	text-shadow:0 0 10px silver;
+}
+
+.wrap_name{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.name{
+	display: flex;
+	width: 60%;
+	margin: auto;
+	font-size: calc(35px + 25 * (100vw / 1920));
+	white-space:pre;
+}
+
+.name > #globalIcon{
+	font-size: calc(55px + 40 * (100vw / 1920));
+	padding-left:12px;
+    color: white;
+	text-shadow:0 0 10px silver;
+	}
+
+.seo_wrap{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.social{
+	width: 50%;
+	text-align: center;
+	margin: auto;	
+	font-size: 130%;
+	color:white;
+}
+
+.contacts{
+	width: 40%;
+	text-align: start;
+	margin: auto;
+}
+.contacts > a > img{
+	width: 17%;
+}
+.main{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: center;
+	max-height: 1500px;
+	max-width: 1000px;
+	/* border:  1px solid red; */
+	}
+
+#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
+	border: rgba(255,255,255,0.5) solid 3px;
+	background:rgba(192,192,192,0.2);
+	width: 200px;
+	height: 200px;
+	margin: 25px 0px;
+	text-align: center;
+	vertical-align: middle;
+	transition: .4s;
+	color: white;
+	box-shadow: 0 1px 10px 0px rgba(255,255,255,0.7);
+	border-radius: 25px;
+	
+}
+#clothes:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#services:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#cosmetics:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#products:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#house:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#auto:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#presents:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#sales:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+	border: rgba(255,255,255,0.70) solid 3px;
+	text-shadow: none;
+  }
+#sport:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#entertainment:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#toys:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#accessories:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#pets:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+#mothers:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+  border: rgba(255,255,255,0.70) solid 3px;
+  text-shadow: none;
+}
+a{
+	text-decoration: none;
+}
+
+.icon{
+	height: max-content;
+}
+
+#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
+ 	margin-top:25px;
+	height: max-content;
+	font-size: 18px;
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 600;
+}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+ 	margin-top:45px;
+	height: max-content;
+	font-size: 60px;
+	color: white;
+
+}
+
+@media (max-width: 1300px){
+	.name{
+	width: 60%;
+}
+	.social{
+		width: 80%;
+	
+	}
+	.contacts{
+	text-align: center;
+	width: 15%;
+	
+	
+	}
+	.contacts > a > img{
+	width: 70%;
+}
+	.main{
+	max-height: 1500px;
+	max-width: 890px;
+	}
+	
+	#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
+	width: 220px;
+	height: 220px;
+	}
+	#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
+	font-size: 22px;
+	}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon,
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+	font-size: 80px;
+	}
+	
+}
+
+
+@media (max-width: 768px){
+	.name{
+	width: 60%;
+}
+	.social{
+		display: none;
+	}
+
+	.contacts{
+	text-align: center;
+	width: 20%;
+	margin-right: 50px;
+	
+	}
+	.contacts > a > img{
+	width: 70%;
+}
+	.main{
+	max-height: 2100px;
+	max-width: 700px;
+	}
+	
+	#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
+	width: 180px;
+	height: 180px;
+	}
+	#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
+	font-size: 19px;
+	}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+	font-size: 55px;
+	margin-top:30px;
+	}
+	
+	.hedder{
+	height: 70px;
+	}
+}
+
+@media (max-width: 650px){
+	.name{
+	width: 60%;
+}
+	.social{
+		display: none;
+	}
+
+	.contacts{
+	text-align: center;
+	width: 20%;
+	margin-right: 50px;
+	
+	}
+	.contacts > a > img{
+	width: 70%;
+}
+	.main{
+	max-height: 4000px;
+	max-width: 600px;
+
+	}
+	
+	#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
+	width: 150px;
+	height: 160px;
+	}
+	#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
+	font-size: 18px;
+	}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+	font-size: 55px;
+	margin-top:20px;
+	}
+	.hedder{
+	height: 70px;
+	}
+	
+}
+
+@media (max-width: 480px){
+	.name{
+	width: 60%;
+}
+	.social{
+	display: none;
+	}
+
+	.contacts{
+	text-align: center;
+	width: 25%;
+	margin-right: 30px;
+	
+	}
+	.contacts > a > img{
+	width: 70%;
+}
+	.main{
+	max-height: 4000px;
+	max-width: 470px;
+	}
+	
+	#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
+	width: 110px;
+	height: 125px;
+	}
+	#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
+	font-size: 14px;
+	margin-top:15px;
+	}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+	font-size: 43px;
+	margin-top: 18px;
+	}
+	.hedder{
+	height: 65px;
+	}
+	
+}
+
+
+@media (max-width: 414px){
+	.name{
+	width: 90%;
+		
+}
+	.social{
+	display: none;
+	}
+
+	.contacts{
+	text-align: center;
+	width: 25%;
+	margin-right: 20px;
+	
+	}
+	.contacts > a > img{
+	width: 75%;
+}
+	.main{
+	max-height: 4000px;
+	max-width: 480px;
+	}
+	
+	#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers,#services{
+	width: 95px;
+	height: 110px;
+	}
+	#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText,#servicesText{
+	font-size: 14px;
+	margin-top:13px;
+	}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+	font-size: 35px;
+	margin-top: 15px;
+	}
+	.hedder{
+	height: 60px;
+	}
+	
+}
+
+@media (max-width: 360px){
+	.name{
+	width: 100%;
+}
+	.social{
+	display: none;
+	}
+
+	.contacts{
+	text-align: center;
+	width: 25%;
+	margin-right: 5px;
+	
+	}
+	.contacts > a > img{
+	width: 85%;
+}
+	.main{
+	max-height: 4000px;
+	max-width: 460px;
+	}
+	
+	#clothes,#services,#cosmetics,#products,#house,#auto,#presents,#sport,#entertainment,#toys,#accessories,#pets,#sales,#mothers{
+	width: 85px;
+	height: 100px;
+	}
+	#clothesText,#servicesText,#cosmeticsText,#productsText,#houseText,#autoText,#presentsText,#sportText,#entertainmentText,#toysText,#accessoriesText,#petsText,#salesText,#mothersText{
+	font-size: 12px;
+	margin-top:10px;
+	}
+	.icon > #clothesIcon,
+	.icon > #servicesIcon
+	.icon > #cosmeticsIcon,
+	.icon > #productsIcon,
+	.icon > #houseIcon,
+	.icon > #autoIcon,
+	.icon > #presentsIcon,
+	.icon > #sportIcon,
+	.icon > #entertainmentIcon,
+	.icon > #toysIcon,
+	.icon > #accessoriesIcon,
+	.icon > #petsIcon,
+	.icon > #salesIcon,
+	.icon > #mothersIcon{
+	font-size: 35px;
+	margin-top: 15px;
+	}
+	.hedder{
+	height: 60px;
+	}	
+}
+
